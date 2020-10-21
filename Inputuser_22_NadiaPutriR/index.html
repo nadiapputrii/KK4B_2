@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input User</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1>XI RPL 4 / 22</h1>
+    <h3>Pendaftaran hiGirls!</h3>
+
+    <form id="frm" action="#">
+        <table>
+            <tr>
+                <td><label for="nama">Nama Lengkap</label></td>
+                <td>:</td>
+                <td><input type="text" id="name" placeholder="Masukkan Nama Lengkap Anda"></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email</label></td>
+                <td>:</td>
+                <td><input type="email" id="email" placeholder="Masukan Email Anda"></td>
+            </tr>
+            <tr>
+                <td><label>Negara</label></td>
+                <td>:</td>
+                <td><input type="text" id="negaraa" list="negara">
+                <datalist id="negara">
+                    <option value="Indonesia">
+                    <option value="Malaysia">
+                    <option value="Singapura">
+                    <option value="Korea">
+                    <option value="Jepang">
+                </datalist></td>
+            </tr>
+            <tr>
+                <td><label for="tahun">Tahun Lahir</label></td>
+                <td>:</td>
+                <td><input type="number" min="1980" max="2020" id="tahun"/></td>
+            </tr>
+            <tr>
+                <td><label>Jenis Kelamin</label></td>
+                <td>:</td>
+                <td>
+                    <input type="radio" id="gender" name="gender" value="Pria">Pria<br>
+                    <input type="radio" id="gender" name="gender" value="Wanita">Wanita<br>
+                    <input type="radio" id="gender" name="gender" value="Tidak Terdefinisi">Tidak Terdefinisi
+                </td>
+            </tr>
+            <tr>
+                <td><button type="button" onclick="inputData()">Daftar</button></td>
+            </tr>
+        </table>
+    </form>
+
+    <div id="tampilkan"></div>
+    
+</body>
+</html>
